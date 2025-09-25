@@ -102,7 +102,7 @@ const Footer = () => {
             </div>
 
             {/* Center - Sponsors */}
-            <div className="col-md-6 d-flex justify-content-center flex-wrap gap-4">
+            <div className="col-md-6 d-flex justify-content-center flex-wrap mb-3 gap-4">
                 <img src="/images/mpessa.png" alt="Sponsor 1" className="img-fluid" style={{ maxHeight: "28px" }} />
                 <img src="/images/discover.png" alt="Sponsor 2" className="img-fluid" style={{ maxHeight: "28px" }} />
                 <img src="/images/visa.png" alt="Sponsor 3" className="img-fluid" style={{ maxHeight: "28px" }} />
