@@ -11,20 +11,20 @@ const testimonialsData = [
   {
     id: 2,
     name: "Jane Doe",
-    title: "Best User Exerience",
-    text: "This was one of the best experiences of my life. Highly recommend it!",
+    title: "Friendly Staff",
+    text: "“Winds sweeping across arid regions lift and transport loose sand grains over time. As the wind slows, particles settle, forming gentle mounds that gradually rise into dunes. Softer deposits shift frequently, while denser patches resist motion. This constant balance of movement and stability.",
   },
   {
     id: 3,
     name: "John Smith",
     title: "Best User Exerience",
-    text: "Amazing! The service and the activities were top-notch.",
+    text: "“When a river flows across soft sediments, the water moves faster on the outer curve and slower on the inner curve. The faster flow erodes soil, while the slower flow deposits it. This alternating erosion and deposition shift the channel over time, gradually forming sweeping bends known as meanders that characterize mature river systems.”",
   },
   {
     id: 4,
     name: "Maria Johnson",
-    title: "Best User Exerience",
-    text: "Everything was perfectly organized. I will definitely come back!",
+    title: "Glaciers Valley",
+    text: "“As massive glaciers move slowly downhill, their weight and embedded debris scrape against underlying rock layers. Softer sections wear away quickly, while harder sections endure, creating uneven surfaces. Over thousands of years, this grinding action transforms V-shaped river valleys into broad U-shaped troughs. These valleys remain long after the ice has melted, marking past glacial activity.”",
   },
 ];
 
@@ -48,13 +48,15 @@ const Testimonials = () => {
 
   return (
     <Container className="py-5">
-      <Row className="align-items-center">
+        <br/>
+        <br/>
+      <Row className="align-items-start">
         {/* Left Side - Heading & Controls */}
         <Col md={4} className="mb-4 mb-md-0">
           <h6 className="text-uppercase text-muted">Testimonials</h6>
-          <h2 className="fw-bold mb-4">
+          <h2 className="fw-bold mb-4" style={{fontSize: "50px"}}>
             What <br /> customers <br />{" "}
-            <span className="text-primary">say about us.</span>
+            <span style={{color: "#FF5200"}}>say about us.</span>
           </h2>
 
           <div className="d-flex align-items-center gap-3">
@@ -101,6 +103,9 @@ const Testimonials = () => {
           </Row>
         </Col>
       </Row>
+
+        <br/>
+        <br/>
     </Container>
   );
 };

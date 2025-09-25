@@ -16,7 +16,9 @@ function App() {
       <Hero/>
       <br/>
       <br/>
-      <Testimonials/>
+      <div style={{ backgroundColor: "#F8F8F8" }}>
+        <Testimonials />
+      </div>
       <br/>
       <br/>
       <Footer/>

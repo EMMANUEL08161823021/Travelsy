@@ -4,24 +4,24 @@ import { Navbar, Container, Nav, Row, Col, Card, Button, Dropdown } from 'react-
 const rows = [
   // row 1: wider left card
   [
-    { id: 1, title: 'Explore Lagos', text: 'Coastal tours, nightlife & food', img: '/src/assets/rafting.png', colMd: 7 },
-    { id: 2, title: 'Weekend Getaway', text: 'Short trips & packages', img: '/src/assets/naturewalk.png', colMd: 5 },
+    { id: 1, title: 'Explore Lagos', img: '/src/assets/rafting.png', colMd: 7 },
+    { id: 2, title: 'Weekend Getaway', img: '/src/assets/naturewalk.png', colMd: 5 },
   ],
   // row 2: equal halves
   [
-    { id: 3, title: 'Adventure Trips', text: 'Hiking & outdoor activities', img: '/src/assets/bikeriding.png', colMd: 4 },
-    { id: 4, title: 'City Breaks', text: 'Museums, cafés & local guides', img: '/src/assets/bungee.png', colMd: 4 },
-    { id: 5, title: 'City Breaks', text: 'Museums, cafés & local guides', img: '/src/assets/winetasting.png', colMd: 4 },
+    { id: 3, title: 'Adventure Trips', img: '/src/assets/bikeriding.png', colMd: 4 },
+    { id: 4, title: 'City Breaks', img: '/src/assets/bungee.png', colMd: 4 },
+    { id: 5, title: 'City Breaks', img: '/src/assets/winetasting.png', colMd: 4 },
   ],
   // row 3: even wider left
   [
-    { id: 6, title: 'Luxury Escapes', text: 'High end hotels & bespoke tours', img: '/src/assets/farmvisit.png', colMd: 8 },
-    { id: 7, title: 'Budget Finds', text: 'Affordable stays & tips', img: '/src/assets/coffeetasting.png', colMd: 4 },
+    { id: 6, title: 'Luxury Escapes', img: '/src/assets/farmvisit.png', colMd: 8 },
+    { id: 7, title: 'Budget Finds', img: '/src/assets/coffeetasting.png', colMd: 4 },
   ],
   // row 4: wider right
   [
-    { id: 8, title: 'Cultural Trails', text: 'Heritage & local culture', img: '/src/assets/camping.png', colMd: 4 },
-    { id: 9, title: 'Food Tours', text: 'Taste the city like a local', img: '/src/assets/bikeriding.png', colMd: 8 },
+    { id: 8, title: 'Cultural Trails', img: '/src/assets/camping.png', colMd: 4 },
+    { id: 9, title: 'Food Tours', img: '/src/assets/bikeriding.png', colMd: 8 },
   ],
 ];
 
@@ -80,20 +80,14 @@ const Hero = () => {
                     {/* Overlay with centered content */}
                     <Card.ImgOverlay className="d-flex flex-column justify-content-center align-items-center text-center bg-dark bg-opacity-50">
                         <Card.Title className="fw-bold">{card.title}</Card.Title>
-                        <Card.Text className="mb-3 small">
-                        {card.text}
-                        </Card.Text>
-                        <div className="d-flex gap-2">
-                        <Button variant="primary" size="sm">Book</Button>
-                        <Button variant="outline-light" size="sm">Details</Button>
-                        </div>
+        
                     </Card.ImgOverlay>
                     </Card>
                 </Col>
                 ))}
             </Row>
             ))}
-            <Button variant="primary" size="sm">Set</Button>
+            <Button style={{backgroundColor: "#FF5200", padding: "10px 30px"}} size="sm">Set</Button>
 
         </Container>
     )

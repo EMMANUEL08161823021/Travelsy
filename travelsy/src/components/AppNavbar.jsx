@@ -20,22 +20,22 @@ const AppNavbar = () => {
             style={{ listStyle: 'none' }}
           >
             <Nav.Item as="li">
-              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#home">Camping Locations</Nav.Link>
             </Nav.Item>
             <Nav.Item as="li">
-              <Nav.Link href="#destinations">Destinations</Nav.Link>
+              <Nav.Link href="#destinations">Activities</Nav.Link>
             </Nav.Item>
             <Nav.Item as="li">
-              <Nav.Link href="#about">About</Nav.Link>
+              <Nav.Link href="#about">Equipment</Nav.Link>
             </Nav.Item>
             <Nav.Item as="li">
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link href="#contact">Blogs</Nav.Link>
             </Nav.Item>
           </Nav>
 
           {/* Right-side controls */}
           <div className="d-flex align-items-center gap-2">
-            <Button variant="primary" className="d-flex align-items-center">
+            <Button style={{backgroundColor: "#FF5200", padding: "10px 30px"}} className="d-flex align-items-center">
               <FaRegCalendarAlt className="me-2" />
               Reservation
             </Button>
@@ -51,7 +51,7 @@ const AppNavbar = () => {
                 className="p-0 border-0"
               >
                 <img
-                  src="https://via.placeholder.com/34"
+                  src="/src/assets/image.png"
                   alt="avatar"
                   className="rounded-circle"
                   style={{ width: 34, height: 34, objectFit: 'cover' }}

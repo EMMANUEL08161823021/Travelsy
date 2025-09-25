@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-light text-dark pt-5 pb-3">
+    <footer className="text-dark pt-5 pb-3">
       <div className="container">
         <div className="row">
           {/* Travelsy Help */}
@@ -65,7 +65,7 @@ const Footer = () => {
                 className="form-control me-2"
                 placeholder="Your Email"
               />
-              <button type="submit" className="btn btn-warning">
+              <button type="submit" style={{backgroundColor: "#FF5200"}} className="btn text-white">
                 Subscribe
               </button>
             </form>
@@ -92,7 +92,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="bg-light border-top py-4">
+        <div className="border-top py-4">
             <br/>
         <div className="container">
             <div className="row align-items-center">
