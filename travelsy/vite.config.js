@@ -11,4 +11,13 @@ export default defineConfig({
       'react-dom': path.resolve(__dirname, 'node_modules/react-dom'),
     },
   },
+  build: {
+    rollupOptions: {
+      // ensure bootstrap and other node_modules imports are bundled
+      external: [], 
+    },
+  },
+  optimizeDeps: {
+    include: ['bootstrap'],
+  },
 });
