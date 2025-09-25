@@ -51,7 +51,7 @@ const AppNavbar = () => {
                 className="p-0 border-0"
               >
                 <img
-                  src="/src/assets/image.png"
+                  src="/images/image.png"
                   alt="avatar"
                   className="rounded-circle"
                   style={{ width: 34, height: 34, objectFit: 'cover' }}

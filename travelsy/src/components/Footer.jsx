@@ -103,11 +103,11 @@ const Footer = () => {
 
             {/* Center - Sponsors */}
             <div className="col-md-6 d-flex justify-content-center flex-wrap gap-4">
-                <img src="/src/assets/mpessa.png" alt="Sponsor 1" className="img-fluid" style={{ maxHeight: "28px" }} />
-                <img src="/src/assets/discover.png" alt="Sponsor 2" className="img-fluid" style={{ maxHeight: "28px" }} />
-                <img src="/src/assets/visa.png" alt="Sponsor 3" className="img-fluid" style={{ maxHeight: "28px" }} />
-                <img src="/src/assets/paypal.png" alt="Sponsor 4" className="img-fluid" style={{ maxHeight: "28px" }} />
-                <img src="/src/assets/mcard.png" alt="Sponsor 5" className="img-fluid" style={{ maxHeight: "28px" }} />
+                <img src="/images/mpessa.png" alt="Sponsor 1" className="img-fluid" style={{ maxHeight: "28px" }} />
+                <img src="/images/discover.png" alt="Sponsor 2" className="img-fluid" style={{ maxHeight: "28px" }} />
+                <img src="/images/visa.png" alt="Sponsor 3" className="img-fluid" style={{ maxHeight: "28px" }} />
+                <img src="/images/paypal.png" alt="Sponsor 4" className="img-fluid" style={{ maxHeight: "28px" }} />
+                <img src="/images/mcard.png" alt="Sponsor 5" className="img-fluid" style={{ maxHeight: "28px" }} />
             </div>
 
             {/* Right Side - Language & Currency */}

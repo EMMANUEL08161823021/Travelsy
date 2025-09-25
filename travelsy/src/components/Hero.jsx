@@ -4,24 +4,24 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const rows = [
   // row 1: wider left card
   [
-    { id: 1, title: 'Explore Lagos', img: '/images/rafting.png', colMd: 7 },
-    { id: 2, title: 'Weekend Getaway', img: '/images/naturewalk.png', colMd: 5 },
+    { id: 1, title: 'Rafting', img: '/images/rafting.png', colMd: 7 },
+    { id: 2, title: 'Nature Walk', img: '/images/naturewalk.png', colMd: 5 },
   ],
   // row 2: equal halves
   [
-    { id: 3, title: 'Adventure Trips', img: '/images/bikeriding.png', colMd: 4 },
-    { id: 4, title: 'City Breaks', img: '/images/bungee.png', colMd: 4 },
-    { id: 5, title: 'City Breaks', img: '/images/winetasting.png', colMd: 4 },
+    { id: 3, title: 'Bike Riding', img: '/images/bikeriding.png', colMd: 4 },
+    { id: 4, title: 'Bungee Jumping', img: '/images/bungee.png', colMd: 4 },
+    { id: 5, title: 'Wine Tasting', img: '/images/winetasting.png', colMd: 4 },
   ],
   // row 3: even wider left
   [
-    { id: 6, title: 'Luxury Escapes', img: '/images/farmvisit.png', colMd: 8 },
-    { id: 7, title: 'Budget Finds', img: '/images/coffeetasting.png', colMd: 4 },
+    { id: 6, title: 'Coffee Tasting', img: '/images/coffeetasting.png', colMd: 4 },
+    { id: 7, title: 'Luxury Escapes', img: '/images/farmvisit.png', colMd: 8 },
   ],
   // row 4: wider right
   [
-    { id: 8, title: 'Cultural Trails', img: '/images/camping.png', colMd: 4 },
-    { id: 9, title: 'Food Tours', img: '/images/bikeriding.png', colMd: 8 },
+    { id: 8, title: 'Camping', img: '/images/camping.png', colMd: 8 },
+    { id: 9, title: 'Kibera Tour', img: '/images/bikeriding.png', colMd: 4 },
   ],
 ];
 
@@ -35,7 +35,7 @@ const Hero = () => {
                 Find An <br /> Experience
             </h1>
             <p className="text-muted">
-                To find you the best experiences, we will ask you a few questions <br />
+                To find you the best experiences, we will ask you a few questions <br className='d-none lg:block' />
                 and show you experiences based on your preferences.
             </p>
 
