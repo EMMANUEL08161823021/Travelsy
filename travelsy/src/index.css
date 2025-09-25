@@ -1,0 +1,117 @@
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+:root{
+  /* colors */
+  --bg: #242424;
+  --surface: #1a1a1a;
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.6);
+  --accent: #646cff;
+  --accent-2: #535bf2;
+
+  /* sizing */
+  --nav-height: 50px;
+  --radius: 8px;
+
+  /* typography */
+  font-family: "DidotCustom", "Didot", "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: var(--text);
+  background-color: var(--bg);
+
+  /* rendering hints */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .18s ease;
+}
+a:hover { color: var(--accent-2); }
+
+/* Layout */
+* { box-sizing: border-box; }
+html,body { height: 100%; margin: 0; }
+body {
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings — Didot looks great large and tight */
+h1, h2, h3, h4 {
+  font-family: inherit;
+  margin: 0 0 .6em 0;
+  font-weight: 600; /* Didot has contrast; use semi-bold for headings */
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+h1 { font-size: clamp(2rem, 4vw, 3.2rem); }
+
+/* Buttons — refined for serif UI */
+button {
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  padding: .5rem .95rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color .18s ease, transform .06s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+button:hover { border-color: var(--accent); transform: translateY(-1px); }
+button:active { transform: translateY(0); }
+button:focus { outline: 3px solid rgba(100,108,255,0.18); outline-offset: 2px; }
+
+/* Link-style button (for avatar toggle etc.) */
+.btn-link {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: var(--muted);
+}
+
+/* Utility for navbar top spacing (50px) — helpful when navbar is fixed-top */
+.app-content {
+  padding-top: var(--nav-height);
+}
+
+/* Small components */
+.small-muted { color: var(--muted); font-size: .95rem; }
+
+/* Light-mode tweak */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #fff;
+    --surface: #f9f9f9;
+    --text: #213547;
+    --muted: rgba(33,53,71,0.6);
+  }
+  a:hover { color: #747bff; }
+}
+
+/* Responsive niceties */
+@media (max-width: 768px) {
+  h1 { font-size: 1.6rem; }
+  :root { --nav-height: 56px; }
+}
