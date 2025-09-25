@@ -1,0 +1,8 @@
+### Get first 10 photos (default)
+GET http://localhost:3000/photos
+
+### Get with limit and page
+GET http://localhost:3000/photos?limit=5&page=2
+
+### Get sorted by title
+GET http://localhost:3000/photos?limit=4&orderBy=title
