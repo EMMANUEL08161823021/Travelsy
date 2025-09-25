@@ -1,27 +1,27 @@
 import { Navbar, Container, Nav, Row, Col, Card, Button, Dropdown } from 'react-bootstrap';
-
+import "bootstrap/dist/css/bootstrap.min.css"; 
 
 const rows = [
   // row 1: wider left card
   [
-    { id: 1, title: 'Explore Lagos', img: '/src/assets/rafting.png', colMd: 7 },
-    { id: 2, title: 'Weekend Getaway', img: '/src/assets/naturewalk.png', colMd: 5 },
+    { id: 1, title: 'Explore Lagos', img: '/images/rafting.png', colMd: 7 },
+    { id: 2, title: 'Weekend Getaway', img: '/images/naturewalk.png', colMd: 5 },
   ],
   // row 2: equal halves
   [
-    { id: 3, title: 'Adventure Trips', img: '/src/assets/bikeriding.png', colMd: 4 },
-    { id: 4, title: 'City Breaks', img: '/src/assets/bungee.png', colMd: 4 },
-    { id: 5, title: 'City Breaks', img: '/src/assets/winetasting.png', colMd: 4 },
+    { id: 3, title: 'Adventure Trips', img: '/images/bikeriding.png', colMd: 4 },
+    { id: 4, title: 'City Breaks', img: '/images/bungee.png', colMd: 4 },
+    { id: 5, title: 'City Breaks', img: '/images/winetasting.png', colMd: 4 },
   ],
   // row 3: even wider left
   [
-    { id: 6, title: 'Luxury Escapes', img: '/src/assets/farmvisit.png', colMd: 8 },
-    { id: 7, title: 'Budget Finds', img: '/src/assets/coffeetasting.png', colMd: 4 },
+    { id: 6, title: 'Luxury Escapes', img: '/images/farmvisit.png', colMd: 8 },
+    { id: 7, title: 'Budget Finds', img: '/images/coffeetasting.png', colMd: 4 },
   ],
   // row 4: wider right
   [
-    { id: 8, title: 'Cultural Trails', img: '/src/assets/camping.png', colMd: 4 },
-    { id: 9, title: 'Food Tours', img: '/src/assets/bikeriding.png', colMd: 8 },
+    { id: 8, title: 'Cultural Trails', img: '/images/camping.png', colMd: 4 },
+    { id: 9, title: 'Food Tours', img: '/images/bikeriding.png', colMd: 8 },
   ],
 ];
 
